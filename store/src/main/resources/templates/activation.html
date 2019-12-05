@@ -1,0 +1,11 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<h3>账户激活</h3><br/>
+		
+		<a href="#" th:href="@{http://localhost:8090/sys/activation?activationCode={activation}(activation=${activation})}">点击激活</a>
+		<p th:text=@{http://localhost:8090/sys/activation?activationCode={activation}(activation=${activation})}>1</p>
+	</body>
+</html>
